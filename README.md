@@ -1,4 +1,4 @@
-SmartSpace
+**SmartSpace**
 Priority-Based Intelligent Room Booking System
 
 SmartSpace is a role-based room booking platform designed for educational institutions to efficiently manage classrooms, laboratories, and seminar halls.
