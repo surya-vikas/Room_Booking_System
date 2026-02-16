@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --surface: #ffffffcc;
+    --text: #0f172a;
+    --primary: #4338ca;
+  }
+
+  html,
+  body,
+  #root {
+    min-height: 100%;
+    width: 100%;
+  }
+
+  * {
+    @apply antialiased;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    color: var(--text);
+    background: linear-gradient(120deg, #eff6ff 0%, #f8fafc 45%, #ecfeff 100%);
+  }
+}
