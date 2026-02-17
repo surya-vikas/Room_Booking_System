@@ -199,8 +199,3 @@ Analytics Dashboard
 QR-Based Room Check-In
 
 Cloud Deployment Optimization**
-
-
-Author's
--> Surya Vikas
--> Nagamani
