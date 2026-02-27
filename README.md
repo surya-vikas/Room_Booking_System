@@ -1,110 +1,103 @@
-**🚀 SmartSpace
-🏢 Priority-Based Intelligent Room Booking System
+# 🚀 SmartSpace
+## 🏢 Priority-Based Intelligent Room Booking System
 
-A full-stack role-based room booking platform designed for educational institutions with structured priority hierarchy and conflict resolution mechanisms.
+A full-stack role-based room booking platform designed for educational institutions with a structured priority hierarchy and intelligent conflict resolution mechanism.
 
-📌 Overview
+---
 
-SmartSpace is built to eliminate room booking conflicts in colleges and universities.
+## 📌 Overview
 
-The system introduces a Priority-Based Access Model, allowing higher authorities to override bookings made by lower-priority users when necessary.
+SmartSpace eliminates room booking conflicts in colleges and universities using a Priority-Based Access Model.
 
-This ensures:
+Higher-authority roles can override lower-priority bookings when necessary.
 
-Fair room allocation
+### 🎯 This ensures:
+- Fair room allocation
+- Administrative control
+- Transparent conflict handling
+- Structured booking lifecycle
+- Scalable architecture
 
-Administrative control
+---
 
-Transparent conflict handling
+## 🧠 Role Hierarchy
 
-Structured booking lifecycle
-
-Scalable architecture
-
-🧠 Role Hierarchy
-
-The application follows a strict authority order:
-
+```
 Student  <  Club  <  Department  <  Admin
-🔹 Role Capabilities
-Role	Book	Cancel Own	Override Lower	View All
-Student	✅	✅	❌	❌
-Club	✅	✅	❌	Limited
-Department	✅	✅	✅	✅
-Admin	✅	✅	✅	✅
-⚙️ Core Features
-✅ Priority-Based Conflict Resolution
+```
 
-Prevents double bookings
+---
 
-Compares user roles before confirming reservation
+## 🔹 Role Capabilities
 
-Ensures structured authority enforcement
+| Role        | Book | Cancel Own | Override Lower | View All |
+|------------|------|------------|----------------|----------|
+| Student    | ✅   | ✅         | ❌             | ❌       |
+| Club       | ✅   | ✅         | ❌             | Limited  |
+| Department | ✅   | ✅         | ✅             | ✅       |
+| Admin      | ✅   | ✅         | ✅             | ✅       |
 
-✅ Override Mechanism
+---
 
-Higher-priority users can override lower bookings
+## ⚙️ Core Features
 
-Automatically updates booking status
+### ✅ Priority-Based Conflict Resolution
+- Prevents double bookings
+- Compares user roles before confirming reservation
+- Enforces structured authority
 
-Maintains audit trail for transparency
+### ✅ Override Mechanism
+- Higher-priority users can override lower bookings
+- Automatically updates booking status
+- Maintains audit trail
 
-✅ Structured Booking Lifecycle
+### ✅ Structured Booking Lifecycle
+
+```
 Requested → Confirmed → Overridden / Cancelled → Archived
-✅ Role-Based Dashboards
+```
 
-Personalized interface based on user role
+### ✅ Role-Based Dashboards
+- Personalized UI per role
+- Booking management tools
+- Status tracking
 
-Booking management tools
+### ✅ Secure Authentication
+- JWT-based authentication
+- Role-based route protection
+- Password hashing using secure standards
 
-Status tracking
+### ✅ Optional Notification System
+- Booking confirmations
+- Override alerts
+- Cancellation updates
+- WhatsApp integration via Twilio API
 
-✅ Secure Authentication
+---
 
-JWT-based authentication
+## 🛠️ Tech Stack
 
-Role-based route protection
+### 🌐 Frontend
+- React
+- Tailwind CSS
+- Axios
+- React Router
 
-Password hashing using secure standards
+### 🔙 Backend
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
 
-✅ Optional Notification System
+### 🔐 Security
+- JWT Authentication
+- Role-Based Access Control (RBAC)
 
-Booking confirmations
+---
 
-Override alerts
+## 🏗️ System Architecture
 
-Cancellation updates
-
-WhatsApp integration via Twilio API
-
-🛠️ Tech Stack
-🌐 Frontend
-
-React
-
-Tailwind CSS
-
-Axios
-
-React Router
-
-🔙 Backend
-
-Node.js
-
-Express.js
-
-MongoDB Atlas
-
-Mongoose
-
-🔐 Security
-
-JWT Authentication
-
-Role-Based Access Control (RBAC)
-
-🏗️ System Architecture
+```
 React Frontend
         ↓
 Express API Server
@@ -112,10 +105,15 @@ Express API Server
 MongoDB Database
         ↓
 Notification Service (Optional)
+```
 
 The architecture follows a clean separation of concerns, making it scalable and production-ready.
 
-🗂️ Project Structure
+---
+
+## 🗂️ Project Structure
+
+```
 smartspace/
 │
 ├── backend/
@@ -130,72 +128,83 @@ smartspace/
 │   └── pages/
 │
 └── README.md
-🔄 Conflict Resolution Logic
+```
+
+---
+
+## 🔄 Conflict Resolution Logic
 
 When a booking request is made:
 
-Check slot availability.
-
-If conflict exists:
-
-Compare role priority.
-
-If requester has higher authority → Override existing booking.
-
-If lower authority → Reject request.
-
-Update booking status accordingly.
-
-Trigger notification (if enabled).
+1. Check slot availability.
+2. If conflict exists:
+   - Compare role priority.
+   - If requester has higher authority → Override existing booking.
+   - If lower authority → Reject request.
+3. Update booking status accordingly.
+4. Trigger notification (if enabled).
 
 This ensures a deterministic and rule-based conflict handling system.
 
-🚀 Installation & Setup
-1️⃣ Clone the Repository
+---
+
+## 🚀 Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/your-username/smartspace.git
 cd smartspace
-2️⃣ Backend Setup
+```
+
+### 2️⃣ Backend Setup
+
+```bash
 cd backend
 npm install
+```
 
-Create a .env file:
+Create a `.env` file:
 
+```
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 TWILIO_SID=your_sid
 TWILIO_AUTH_TOKEN=your_token
+```
 
 Start the server:
 
+```bash
 node index.js
-3️⃣ Frontend Setup
+```
+
+### 3️⃣ Frontend Setup
+
+```bash
 cd frontend
 npm install
 npm run dev
-📈 Why This Project Stands Out
+```
 
-Real-world problem solving
+---
 
-Authority-based system design
+## 📈 Why This Project Stands Out
 
-Role-Based Access Control implementation
+- Real-world problem solving
+- Authority-based system design
+- Role-Based Access Control implementation
+- Conflict resolution algorithm
+- Scalable backend structure
+- Hackathon-ready full-stack implementation
 
-Conflict resolution algorithm
+---
 
-Scalable backend structure
+## 🔮 Future Enhancements
 
-Hackathon-ready full-stack implementation
-
-🔮 Future Enhancements
-
-Google Calendar Integration
-
-Email Notification System
-
-Booking Approval Workflow
-
-Analytics Dashboard
-
-QR-Based Room Check-In
-
-Cloud Deployment Optimization**
+- Google Calendar Integration
+- Email Notification System
+- Booking Approval Workflow
+- Analytics Dashboard
+- QR-Based Room Check-In
+- Cloud Deployment Optimization
