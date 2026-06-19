@@ -5,7 +5,8 @@ const { User, Room, Booking } = require("../models");
 
 dotenv.config();
 
-const API_BASE = process.env.DEMO_API_BASE_URL || "http://localhost:5000/api";
+const API_BASE =
+  process.env.DEMO_API_BASE_URL || "https://room-booking-system-4hxr.onrender.com/api";
 const STUDENT_EMAIL = process.env.DEMO_STUDENT_EMAIL || "student.demo@smartspace.dev";
 const STUDENT_PASSWORD = process.env.DEMO_STUDENT_PASSWORD || "Demo@123";
 const DEPARTMENT_EMAIL = process.env.DEMO_DEPARTMENT1_EMAIL || "dep1@gmail.com";

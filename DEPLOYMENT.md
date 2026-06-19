@@ -14,5 +14,5 @@
 2. On Netlify, create a new site from repo.
 3. Build command: `npm run build`
 4. Publish directory: `dist`
-5. Add env variable: `VITE_API_URL=<render-backend-url>/api`
+5. Add env variable: `VITE_API_URL=https://room-booking-system-4hxr.onrender.com/api`
 6. Deploy.
