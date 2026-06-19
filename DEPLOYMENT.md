@@ -6,7 +6,7 @@
 3. Build command: `npm install`
 4. Start command: `npm start`
 5. Add environment variables from `server/.env.example`.
-6. Set `MONGO_URI` to your hosted MongoDB URI.
+6. Set `MONGODB_URI` to your hosted MongoDB URI.
 7. Deploy and note backend URL.
 
 ## Frontend (Netlify)
