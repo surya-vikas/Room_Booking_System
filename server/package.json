@@ -9,7 +9,8 @@
     "seed:demo": "node scripts/seedDemoData.js",
     "demo:override": "node scripts/runOverrideDemo.js",
     "seed:rooms": "node scripts/seedBulkRooms.js",
-    "seed:fake-bookings": "node scripts/seedFakeBookings.js"
+    "seed:fake-bookings": "node scripts/seedFakeBookings.js",
+    "db:migrate:local-to-atlas": "node scripts/migrateLocalToAtlas.js"
   },
   "keywords": [],
   "author": "",

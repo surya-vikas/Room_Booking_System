@@ -1,0 +1,35 @@
+{
+  "sourceDatabase": "smartspace",
+  "targetDatabase": "roomreserve",
+  "collections": [
+    {
+      "collectionName": "bookings",
+      "oldDocumentCount": 28,
+      "newDocumentCount": 28,
+      "indexes": 0,
+      "status": "matched"
+    },
+    {
+      "collectionName": "noticeboards",
+      "oldDocumentCount": 1,
+      "newDocumentCount": 1,
+      "indexes": 0,
+      "status": "matched"
+    },
+    {
+      "collectionName": "users",
+      "oldDocumentCount": 8,
+      "newDocumentCount": 8,
+      "indexes": 1,
+      "status": "matched"
+    },
+    {
+      "collectionName": "rooms",
+      "oldDocumentCount": 197,
+      "newDocumentCount": 197,
+      "indexes": 0,
+      "status": "matched"
+    }
+  ],
+  "generatedAt": "2026-06-19T09:30:35.231Z"
+}
